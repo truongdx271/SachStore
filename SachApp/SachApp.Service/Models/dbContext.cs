@@ -12,7 +12,7 @@ namespace SachApp.Service.Models
         private SqlConnection conn;
         public dbContext()
         {
-            conn = new SqlConnection("Data Source =.; Initial Catalog = CuaHangSach; Integrated Security = True");
+            conn = new SqlConnection("Data Source =ANHMINH-PC; Initial Catalog = CuaHangSach; Integrated Security = True");
             
         }
         public DataTable GetData(string strSQl) //select
@@ -64,7 +64,6 @@ namespace SachApp.Service.Models
             int row = cmd.ExecuteNonQuery();
             conn.Close();
             return row;
-            
         }
     }
 }

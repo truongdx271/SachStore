@@ -8,31 +8,26 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
-using SachApp.Service.Dao;
 using SachApp.Service.Models;
+using SachApp.Service.Dao;
 
 namespace SachApp
 {
-    public partial class frmTacGia : DevExpress.XtraEditors.XtraForm
+    public partial class frmNhaXuatBan : DevExpress.XtraEditors.XtraForm
     {
-        public frmTacGia()
+        public frmNhaXuatBan()
         {
             InitializeComponent();
         }
-        TacGiaDao tacgiadao = new TacGiaDao();
-        TacGia tacgia = new TacGia();
+        NhaXuatBan nxb = new NhaXuatBan();
+        NhaXuatBanDao nxbdao = new NhaXuatBanDao();
         bool IsInsert = false;
-
-        public void HienThi()
-        {
-            msdsTacGia.DataSource = tacgiadao.GetData();
-        }
         void KhoaDieuKhien()
         {
-            txtTenTG.Enabled = false;
+
+            txtTenNXB.Enabled =false;
             txtDiaChi.Enabled = false;
             txtDienThoai.Enabled = false;
-            txtGioiThieu.Enabled = false;
             txtEmail.Enabled = false;
 
             btnThem.Enabled = true;
@@ -42,10 +37,10 @@ namespace SachApp
         }
         void MoKhoaDieuKhien()
         {
-            txtTenTG.Enabled = true;
+            txtTenNXB.Enabled = true;
             txtDiaChi.Enabled = true;
             txtDienThoai.Enabled = true;
-            txtGioiThieu.Enabled = true;
+            txtEmail.Enabled = true;
             txtEmail.Enabled = true;
 
             btnThem.Enabled = false;
@@ -53,41 +48,34 @@ namespace SachApp
             btnXoa.Enabled = false;
             btnLuu.Enabled = true;
         }
-        private void frmTacGia_Load(object sender, EventArgs e)
-        {
-            HienThi();
-            KhoaDieuKhien();
-        }
         void XoaText()
         {
-            txtTenTG.Text = string.Empty;
+            txtTenNXB.Text = string.Empty;
             txtDiaChi.Text = string.Empty;
             txtDienThoai.Text = string.Empty;
-            txtGioiThieu.Text = string.Empty;
             txtEmail.Text = string.Empty;
+            
         }
-
-        private void btnThem_Click(object sender, EventArgs e)
+        void HienThi()
         {
-            XoaText();
-            MoKhoaDieuKhien();
-            IsInsert = true;
+            msdsNXB.DataSource = nxbdao.GetData();
         }
 
+       
         private void btnSua_Click(object sender, EventArgs e)
         {
             MoKhoaDieuKhien();
+            txtTenNXB.Enabled = false;
             IsInsert = false;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-
             if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Thông Báo!", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
-                    tacgiadao.Delete(int.Parse(gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[0]).ToString()));
+                    nxbdao.Delete(int.Parse(gridNXB.GetRowCellValue(gridNXB.FocusedRowHandle, gridNXB.Columns[0]).ToString()));
                     XtraMessageBox.Show("Đã xóa thành công");
                     XoaText();
                     KhoaDieuKhien();
@@ -101,16 +89,15 @@ namespace SachApp
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            tacgia.MATG = int.Parse(gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[0]).ToString());
-            tacgia.TENTG = txtTenTG.Text;
-            tacgia.DIACHI = txtDiaChi.Text;
-            tacgia.DIENTHOAI = txtDienThoai.Text;
-            tacgia.GIOITHIEU = txtGioiThieu.Text;
-            tacgia.EMAIL = txtEmail.Text;
+            
+            nxb.TENNXB = txtTenNXB.Text;
+            nxb.DIACHI = txtDiaChi.Text;
+            nxb.DIENTHOAI = txtDienThoai.Text;
+            nxb.EMAIL = txtEmail.Text;
             if (IsInsert == true)
             {
                 //insert
-                tacgiadao.Insert(tacgia);
+                nxbdao.Insert(nxb);
                 XtraMessageBox.Show("Thêm thành công!");
                 HienThi();
                 XoaText();
@@ -119,7 +106,7 @@ namespace SachApp
             else
             {
                 //update
-                tacgiadao.Update(tacgia);
+                nxbdao.Update(nxb);
                 XtraMessageBox.Show("Sửa thành công!");
                 HienThi();
                 XoaText();
@@ -127,21 +114,36 @@ namespace SachApp
             }
         }
 
-        private void msdsTacGia_Click(object sender, EventArgs e)
+        private void msdsNXB_Click(object sender, EventArgs e)
         {
             KhoaDieuKhien();
             try
             {
-                txtTenTG.Text = gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[1]).ToString();
-                txtDiaChi.Text = gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[2]).ToString();
-                txtDienThoai.Text = gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[3]).ToString();
-                txtEmail.Text = gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[4]).ToString();
-                txtGioiThieu.Text = gridTacGia.GetRowCellValue(gridTacGia.FocusedRowHandle, gridTacGia.Columns[5]).ToString();
+                
+                txtTenNXB.Text = gridNXB.GetRowCellValue(gridNXB.FocusedRowHandle, gridNXB.Columns[1]).ToString();
+                txtDiaChi.Text = gridNXB.GetRowCellValue(gridNXB.FocusedRowHandle, gridNXB.Columns[2]).ToString();
+                txtDienThoai.Text = gridNXB.GetRowCellValue(gridNXB.FocusedRowHandle, gridNXB.Columns[3]).ToString();
+                txtEmail.Text = gridNXB.GetRowCellValue(gridNXB.FocusedRowHandle, gridNXB.Columns[4]).ToString();
+                
             }
             catch
             {
 
             }
         }
+
+        private void frmNhaXuatBan_Load(object sender, EventArgs e)
+        {
+            KhoaDieuKhien();
+            HienThi();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            XoaText();
+            MoKhoaDieuKhien();
+            IsInsert = true;
+        }
+
     }
 }
