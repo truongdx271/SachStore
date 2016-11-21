@@ -105,11 +105,12 @@
             // 
             // btnNXB
             // 
-            this.btnNXB.Caption = "Nhà Xuất bản";
+            this.btnNXB.Caption = "Nhà xuất bản";
             this.btnNXB.Glyph = ((System.Drawing.Image)(resources.GetObject("btnNXB.Glyph")));
             this.btnNXB.Id = 5;
             this.btnNXB.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNXB.LargeGlyph")));
             this.btnNXB.Name = "btnNXB";
+            this.btnNXB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNXB_ItemClick);
             // 
             // btnTacGia
             // 
@@ -118,6 +119,7 @@
             this.btnTacGia.Id = 6;
             this.btnTacGia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTacGia.LargeGlyph")));
             this.btnTacGia.Name = "btnTacGia";
+            this.btnTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTacGia_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -176,6 +178,7 @@
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Hệ thống quản lý cửa hàng bán sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);

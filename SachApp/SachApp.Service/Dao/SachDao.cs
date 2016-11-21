@@ -14,7 +14,7 @@ namespace SachApp.Service.Dao
     {
         public DataTable GetData()
         {
-            return base.GetData("SACH_SELECT_ALL", null);
+            return base.GetData("SACH_GETALL", null);
         }
         public DataTable GetDataByID(string MASACH)
         {
@@ -56,7 +56,7 @@ namespace SachApp.Service.Dao
             };
             return base.ExecuteSQL("SACH_UPDATE", para);
         }
-        public int Delete(string MASACH)
+        public int Delete(int MASACH)
         {
             SqlParameter[] para =
                {
