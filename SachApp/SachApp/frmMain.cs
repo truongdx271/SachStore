@@ -52,5 +52,18 @@ namespace SachApp
                 fr.Show();
             }
         }
+
+        private void btnNhapSach_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = CheckActiveForm(typeof(frmNhapSach));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmNhapSach fr = new frmNhapSach();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
     }
 }

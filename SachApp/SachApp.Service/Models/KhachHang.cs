@@ -14,7 +14,8 @@ namespace SachApp.Service.Models
         [StringLength(500)]
         public string TENKH { get; set; }
 
-        public int? DIENTHOAI { get; set; }
+        [StringLength(50)]
+        public string DIENTHOAI { get; set; }
 
         [StringLength(500)]
         public string DIACHI { get; set; }
