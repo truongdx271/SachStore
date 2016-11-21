@@ -17,7 +17,7 @@ namespace SachApp.Service.Models
         [StringLength(500)]
         public string DIACHI { get; set; }
 
-        [StringLength(12)]
+        [StringLength(50)]
         public string DIENTHOAI { get; set; }
 
         [StringLength(500)]

@@ -34,8 +34,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
     <Reference Include="DevExpress.Data.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Utils.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
@@ -43,7 +45,14 @@
     <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v15.1, Version=15.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -67,11 +76,19 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="frmNhaXuatBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNhaXuatBan.Designer.cs">
       <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
+=======
+    <Compile Include="frmNhapSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNhapSach.Designer.cs">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </Compile>
     <Compile Include="frmTacGia.cs">
       <SubType>Form</SubType>
@@ -99,8 +116,13 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="frmNhaXuatBan.resx">
       <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="frmNhapSach.resx">
+      <DependentUpon>frmNhapSach.cs</DependentUpon>
+>>>>>>> refs/remotes/origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="frmTacGia.resx">
       <DependentUpon>frmTacGia.cs</DependentUpon>
