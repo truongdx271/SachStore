@@ -19,7 +19,8 @@ namespace SachApp.Service.Models
 
         public DateTime? NGAYSINH { get; set; }
 
-        public int? DIENTHOAI { get; set; }
+        [StringLength(50)]
+        public string DIENTHOAI { get; set; }
 
         [StringLength(500)]
         public string DIACHI { get; set; }
