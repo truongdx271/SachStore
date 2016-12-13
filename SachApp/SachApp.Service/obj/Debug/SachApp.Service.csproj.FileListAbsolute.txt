@@ -5,6 +5,6 @@ D:\Nam4DH\SachStore\SachApp\SachApp.Service\bin\Debug\EntityFramework.dll
 D:\Nam4DH\SachStore\SachApp\SachApp.Service\bin\Debug\EntityFramework.SqlServer.dll
 D:\Nam4DH\SachStore\SachApp\SachApp.Service\bin\Debug\EntityFramework.xml
 D:\Nam4DH\SachStore\SachApp\SachApp.Service\bin\Debug\EntityFramework.SqlServer.xml
-D:\Nam4DH\SachStore\SachApp\SachApp.Service\obj\Debug\SachApp.Service.csprojResolveAssemblyReference.cache
 D:\Nam4DH\SachStore\SachApp\SachApp.Service\obj\Debug\SachApp.Service.dll
 D:\Nam4DH\SachStore\SachApp\SachApp.Service\obj\Debug\SachApp.Service.pdb
+D:\Nam4DH\SachStore\SachApp\SachApp.Service\obj\Debug\SachApp.Service.csprojResolveAssemblyReference.cache

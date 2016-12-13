@@ -64,6 +64,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAddKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddKhachHang.Designer.cs">
+      <DependentUpon>frmAddKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNPP.Designer.cs">
+      <DependentUpon>frmAddNPP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddSach.Designer.cs">
+      <DependentUpon>frmAddSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBanSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBanSach.Designer.cs">
+      <DependentUpon>frmBanSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmListSach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +120,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddKhachHang.resx">
+      <DependentUpon>frmAddKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNPP.resx">
+      <DependentUpon>frmAddNPP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSach.resx">
+      <DependentUpon>frmAddSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBanSach.resx">
+      <DependentUpon>frmBanSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmListSach.resx">
       <DependentUpon>frmListSach.cs</DependentUpon>
     </EmbeddedResource>

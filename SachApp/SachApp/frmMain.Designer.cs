@@ -85,6 +85,7 @@
             this.btnBanSach.Id = 2;
             this.btnBanSach.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBanSach.LargeGlyph")));
             this.btnBanSach.Name = "btnBanSach";
+            this.btnBanSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBanSach_ItemClick);
             // 
             // btnSach
             // 
@@ -119,6 +120,7 @@
             this.btnTacGia.Id = 6;
             this.btnTacGia.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnTacGia.LargeGlyph")));
             this.btnTacGia.Name = "btnTacGia";
+            this.btnTacGia.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTacGia_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -177,6 +179,7 @@
             this.Ribbon = this.ribbon;
             this.StatusBar = this.ribbonStatusBar;
             this.Text = "Hệ thống quản lý cửa hàng bán sách";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).EndInit();
             this.ResumeLayout(false);
