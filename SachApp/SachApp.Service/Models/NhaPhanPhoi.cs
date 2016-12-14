@@ -20,7 +20,8 @@ namespace SachApp.Service.Models
         [StringLength(50)]
         public string DIENTHOAI { get; set; }
 
-        public int? FAX { get; set; }
+        [StringLength(50)]
+        public string FAX { get; set; }
 
         [StringLength(500)]
         public string EMAIL { get; set; }

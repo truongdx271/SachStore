@@ -18,6 +18,11 @@ namespace SachApp.Service.Models
 
         public int? NAMXUATBAN { get; set; }
 
+        public int? MATG { get; set; }
+
+        [StringLength(50)]
+        public string BARCODE { get; set; }
+
         public decimal? GIAMUA { get; set; }
 
         public decimal? GIABAN { get; set; }
@@ -28,6 +33,8 @@ namespace SachApp.Service.Models
 
         [StringLength(500)]
         public string MOTA { get; set; }
+
+        public DateTime? CREATEDATE { get; set; }
 
 
     }

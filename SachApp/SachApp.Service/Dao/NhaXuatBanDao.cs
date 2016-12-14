@@ -11,10 +11,15 @@ namespace SachApp.Service.Dao
 {
     public class NhaXuatBanDao : dbContext
     {
-        public DataTable GetData()
+        public DataTable GetNXB()
         {
             return base.GetData("NXB_GETALL", null);
         }
+
+        // public DataTable GetData()
+        // {
+            // return base.GetData("NXB_GETALL", null);
+        // }
         public int Delete(int Ma)
         {
             SqlParameter[] para =
