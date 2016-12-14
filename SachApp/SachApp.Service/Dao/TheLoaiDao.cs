@@ -11,6 +11,11 @@ namespace SachApp.Service.Dao
 {
     public class TheLoaiDao : dbContext
     {
+        public DataTable GetTheLoai()
+        {
+            return base.GetData("THELOAI_GETALL", null);
+        }
+
         public DataTable GetData()
         {
             return base.GetData("THELOAI_GETALL", null);

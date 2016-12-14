@@ -11,10 +11,16 @@ namespace SachApp.Service.Dao
 {
     public class TacGiaDao : dbContext
     {
-        public DataTable GetData()
+
+        public DataTable GetTacGia()
         {
             return base.GetData("TACGIA_GETALL", null);
         }
+
+        // public DataTable GetData()
+        // {
+            // return base.GetData("TACGIA_GETALL", null);
+        // }
         public int Delete(int Ma)
         {
             SqlParameter[] para =

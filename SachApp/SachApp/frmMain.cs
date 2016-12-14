@@ -94,5 +94,23 @@ namespace SachApp
                 fr.Show();
             }
         }
+
+        private void btnTacGia_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnBanSach_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = CheckActiveForm(typeof(frmBanSach));
+            if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmBanSach fr = new frmBanSach();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+        }
     }
 }

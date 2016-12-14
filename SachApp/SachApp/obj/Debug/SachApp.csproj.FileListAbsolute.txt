@@ -7,7 +7,6 @@ D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Utils.v15.1.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.XtraBars.v15.1.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.XtraEditors.v15.1.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\SachApp.Service.dll
-D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\EntityFramework.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Sparkline.v15.1.Core.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\SachApp.Service.pdb
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Data.v15.1.xml
@@ -15,7 +14,6 @@ D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Printing.v15.1.Core.xml
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Utils.v15.1.xml
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.XtraBars.v15.1.xml
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.XtraEditors.v15.1.xml
-D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\EntityFramework.xml
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\DevExpress.Sparkline.v15.1.Core.xml
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\de\DevExpress.Data.v15.1.resources.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\es\DevExpress.Data.v15.1.resources.dll
@@ -86,6 +84,14 @@ D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\es\DevExpress.Office.v15.1.Core.re
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\ja\DevExpress.Office.v15.1.Core.resources.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\bin\Debug\ru\DevExpress.Office.v15.1.Core.resources.dll
 D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmTheLoai.resources
+<<<<<<< HEAD
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmNhapSach.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmTacGia.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmAddNPP.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmAddSach.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmAddKhachHang.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmBanSach.resources
+=======
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\bin\Debug\SachApp.exe.config
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\bin\Debug\SachApp.exe
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\bin\Debug\SachApp.pdb
@@ -175,3 +181,4 @@ C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.exe
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.pdb
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmTimKiemNC.resources
+>>>>>>> refs/remotes/origin/master

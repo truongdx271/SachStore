@@ -26,14 +26,44 @@ namespace SachApp
             girdSach.ExpandAllGroups();
         }
 
+        SachDao sDao = new SachDao();
+
+        private void LoadListSach()
+        {
+            DataTable dt = new DataTable();
+            dt = sDao.GetData();
+            gridControl1.DataSource = dt;
+            dgvListSach.ExpandAllGroups(); 
+        }
+
+
         private void frmListSach_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+            btnXoa.Enabled = false;
+            LoadListSach();
+        }
+
+        private void btnThemMoi_Click(object sender, EventArgs e)
+        {
+            frmAddSach frm = new frmAddSach();
+            frm.IsInsert = true;
+            frm.LamMoi += new EventHandler(btnHienThi_Click);
+            frm.ShowInTaskbar = false;
+            frm.ShowDialog();
+        }
+
+        private void btnHienThi_Click(object sender, EventArgs e)
+        {
+            LoadListSach();
+=======
             HienThi();
         }
 
         private void btnHienthi_Click(object sender, EventArgs e)
         {
             HienThi();
+>>>>>>> refs/remotes/origin/master
         }
 
         private void btnXoa_Click(object sender, EventArgs e)

@@ -51,6 +51,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\ChiTietHoaDonBus.cs" />
+    <Compile Include="BLL\ChiTietPhieuNhapBus.cs" />
+    <Compile Include="BLL\HoaDonBus.cs" />
+    <Compile Include="BLL\KhachHangBus.cs" />
+    <Compile Include="BLL\NhanVienBus.cs" />
+    <Compile Include="BLL\NhaPhanPhoiBus.cs" />
+    <Compile Include="BLL\NhaXuatBanBus.cs" />
+    <Compile Include="BLL\PhieuNhapBus.cs" />
+    <Compile Include="BLL\QuyenBus.cs" />
+    <Compile Include="BLL\SachBus.cs" />
+    <Compile Include="BLL\TacGiaBus.cs" />
+    <Compile Include="BLL\TheLoaiBus.cs" />
+    <Compile Include="Dao\ChiTietHoaDonDao.cs" />
+    <Compile Include="Dao\ChiTietPhieuNhapDao.cs" />
     <Compile Include="Dao\HoaDonDao.cs" />
     <Compile Include="Dao\KhachHangDao.cs" />
     <Compile Include="Dao\NhanVienDao.cs" />

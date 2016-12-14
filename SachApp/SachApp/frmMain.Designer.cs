@@ -85,6 +85,7 @@
             this.btnBanSach.Id = 2;
             this.btnBanSach.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnBanSach.LargeGlyph")));
             this.btnBanSach.Name = "btnBanSach";
+            this.btnBanSach.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBanSach_ItemClick);
             // 
             // btnSach
             // 
