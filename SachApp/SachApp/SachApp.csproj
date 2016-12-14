@@ -100,19 +100,17 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="frmNhaXuatBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNhaXuatBan.Designer.cs">
       <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
-=======
+	</Compile>
     <Compile Include="frmNhapSach.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmNhapSach.Designer.cs">
       <DependentUpon>frmNhapSach.cs</DependentUpon>
->>>>>>> refs/remotes/origin/master
     </Compile>
     <Compile Include="frmTacGia.cs">
       <SubType>Form</SubType>
@@ -152,13 +150,11 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="frmNhaXuatBan.resx">
       <DependentUpon>frmNhaXuatBan.cs</DependentUpon>
-=======
+	</EmbeddedResource>
     <EmbeddedResource Include="frmNhapSach.resx">
       <DependentUpon>frmNhapSach.cs</DependentUpon>
->>>>>>> refs/remotes/origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="frmTacGia.resx">
       <DependentUpon>frmTacGia.cs</DependentUpon>

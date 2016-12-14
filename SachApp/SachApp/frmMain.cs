@@ -57,6 +57,7 @@ namespace SachApp
         private void btnNXB_ItemClick(object sender, ItemClickEventArgs e)
         {
             Form frm = CheckActiveForm(typeof(frmNhaXuatBan));
+            if (frm != null)
                 frm.Activate();
             else
             {
@@ -95,10 +96,10 @@ namespace SachApp
             }
         }
 
-        private void btnTacGia_ItemClick(object sender, ItemClickEventArgs e)
-        {
+        //private void btnTacGia_ItemClick(object sender, ItemClickEventArgs e)
+        //{
 
-        }
+        //}
 
         private void btnBanSach_ItemClick(object sender, ItemClickEventArgs e)
         {

@@ -182,3 +182,5 @@ C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.pdb
 C:\Users\ANH MINH\Desktop\SACHSTORE\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmTimKiemNC.resources
 >>>>>>> refs/remotes/origin/master
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmNhaXuatBan.resources
+D:\Nam4DH\SachStore\SachApp\SachApp\obj\Debug\SachApp.frmTimKiemNC.resources
