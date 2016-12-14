@@ -107,11 +107,12 @@
             // 
             // btnNXB
             // 
-            this.btnNXB.Caption = "Nhà Xuất bản";
+            this.btnNXB.Caption = "Nhà xuất bản";
             this.btnNXB.Glyph = ((System.Drawing.Image)(resources.GetObject("btnNXB.Glyph")));
             this.btnNXB.Id = 5;
             this.btnNXB.LargeGlyph = ((System.Drawing.Image)(resources.GetObject("btnNXB.LargeGlyph")));
             this.btnNXB.Name = "btnNXB";
+            this.btnNXB.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnNXB_ItemClick);
             // 
             // btnTacGia
             // 

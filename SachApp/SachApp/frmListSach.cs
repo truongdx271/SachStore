@@ -18,6 +18,13 @@ namespace SachApp
         {
             InitializeComponent();
         }
+        SachDao sachdao = new SachDao();
+
+        void HienThi()
+        {
+            msdsSach.DataSource = sachdao.GetData();
+            girdSach.ExpandAllGroups();
+        }
 
         SachDao sDao = new SachDao();
 
@@ -32,6 +39,7 @@ namespace SachApp
 
         private void frmListSach_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             btnXoa.Enabled = false;
             LoadListSach();
         }
@@ -48,6 +56,33 @@ namespace SachApp
         private void btnHienThi_Click(object sender, EventArgs e)
         {
             LoadListSach();
+=======
+            HienThi();
         }
+
+        private void btnHienthi_Click(object sender, EventArgs e)
+        {
+            HienThi();
+>>>>>>> refs/remotes/origin/master
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if (XtraMessageBox.Show("Bạn có muốn xóa không?", "Thông Báo!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    int Ma = int.Parse(girdSach.GetRowCellValue(girdSach.FocusedRowHandle, girdSach.Columns[0]).ToString());
+                    sachdao.Delete(Ma);
+                    XtraMessageBox.Show("Đã xóa thành công");
+                    HienThi();
+                }
+                catch
+                {
+                }
+            }
+        }
+
+        
     }
 }

@@ -53,6 +53,20 @@ namespace SachApp
             }
         }
 
+
+        private void btnNXB_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = CheckActiveForm(typeof(frmNhaXuatBan));
+                frm.Activate();
+            else
+            {
+
+                frmNhaXuatBan fr = new frmNhaXuatBan();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+	}
+
         private void btnNhapSach_ItemClick(object sender, ItemClickEventArgs e)
         {
             Form frm = CheckActiveForm(typeof(frmNhapSach));
@@ -60,7 +74,22 @@ namespace SachApp
                 frm.Activate();
             else
             {
+                frmTacGia fr = new frmTacGia();
                 frmNhapSach fr = new frmNhapSach();
+                fr.MdiParent = this;
+                fr.Show();
+            }
+            
+        }
+
+        private void btnTacGia_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = CheckActiveForm(typeof(frmTacGia));
+		  if (frm != null)
+                frm.Activate();
+            else
+            {
+                frmTacGia fr = new frmTacGia();  
                 fr.MdiParent = this;
                 fr.Show();
             }

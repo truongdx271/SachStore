@@ -64,7 +64,6 @@ namespace SachApp.Service.Models
             int row = cmd.ExecuteNonQuery();
             conn.Close();
             return row;
-            
         }
     }
 }
